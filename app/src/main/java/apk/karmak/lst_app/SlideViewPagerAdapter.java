@@ -47,14 +47,14 @@ public class SlideViewPagerAdapter extends PagerAdapter {
 //        TextView desc=view.findViewById(R.id.desc);
 
         TextView skip=view.findViewById(R.id.skip);
-//        skip.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent=new Intent(ctx,LoginActivity.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
-//                ctx.startActivity(intent);
-//            }
-//        });
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ctx,MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+                ctx.startActivity(intent);
+            }
+        });
 //        next.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
