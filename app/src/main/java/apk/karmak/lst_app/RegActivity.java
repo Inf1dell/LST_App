@@ -3,6 +3,7 @@ package apk.karmak.lst_app;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import apk.karmak.lst_app.auth.LoginArtFragment;
 import apk.karmak.lst_app.auth.LoginProfileFragment;
+import apk.karmak.lst_app.utils.MyDialogFragment;
 
 public class RegActivity extends AppCompatActivity {
 
@@ -28,10 +30,7 @@ public class RegActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
 
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_reg, new LoginProfileFragment());
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_reg, new LoginProfileFragment()).commit();
 
         progressReg=findViewById(R.id.progressReg);
         title=findViewById(R.id.textView9);
@@ -41,20 +40,22 @@ public class RegActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(create.getText().equals("Создать аккаунт")) {
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.fragment_reg, new LoginArtFragment());
-                    fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_reg, new LoginArtFragment()).commit();
+
                     progressReg.setProgress(6);
                     create.setText("Завершить");
                     title.setText("Что вам больше нравится?");
                 }else if(create.getText().equals("Завершить")) {
-                    new AlertDialog.Builder(RegActivity.this)
-                            .setTitle("Delete entry")
-                            .setMessage("Are you sure you want to delete this entry?")
-                            .setPositiveButton("Yes", null)
-                            .setNegativeButton("No", null)
-                            .show();
+                    FragmentManager manager = getSupportFragmentManager();
+                    MyDialogFragment myDialogFragment = new MyDialogFragment();
+                    myDialogFragment.show(manager, "myDialog");
+
+//                    MyDialogFragment myDialogFragment = new MyDialogFragment();
+//                    FragmentManager manager = getSupportFragmentManager();
+//                    //myDialogFragment.show(manager, "dialog");
+//
+//                    FragmentTransaction transaction = manager.beginTransaction();
+//                    myDialogFragment.show(transaction, "dialog");
                 }else {
                     Toast.makeText(RegActivity.this, "Error", Toast.LENGTH_LONG).show();
                 }
