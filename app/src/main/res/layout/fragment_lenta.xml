@@ -1,14 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main.LentaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Интервью"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/f_lenta11" />
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:adjustViewBounds="false"
+                        android:src="@drawable/f_lenta12" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Интересные факты"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView29"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/f_lenta21" />
+
+                    <ImageView
+                        android:id="@+id/imageView30"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:adjustViewBounds="false"
+                        android:src="@drawable/f_lenta22" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Видеорубрика"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView31"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/f_lenta31" />
+
+                    <ImageView
+                        android:id="@+id/imageView32"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:adjustViewBounds="false"
+                        android:src="@drawable/f_lenta32" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Плейлист МШИ"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/f_lenta41" />
+
+                    <ImageView
+                        android:id="@+id/imageView34"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:adjustViewBounds="false"
+                        android:src="@drawable/f_lenta42" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Рубрика квиз"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView35"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/f_lenta51" />
+
+                    <ImageView
+                        android:id="@+id/imageView36"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:adjustViewBounds="false"
+                        android:src="@drawable/f_lenta52" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Необычные профессии МШИ"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView37"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/f_lenta61" />
+
+                    <ImageView
+                        android:id="@+id/imageView38"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="20dp"
+                        android:adjustViewBounds="false"
+                        android:src="@drawable/f_lenta62" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

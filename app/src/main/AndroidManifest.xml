@@ -13,6 +13,18 @@
         android:theme="@style/Theme.LST_App"
         tools:targetApi="31">
         <activity
+            android:name=".main.video.buy.CardAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.video.VInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.Profile.EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity

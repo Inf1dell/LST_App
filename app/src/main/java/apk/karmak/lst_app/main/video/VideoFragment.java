@@ -1,4 +1,4 @@
-package apk.karmak.lst_app.main;
+package apk.karmak.lst_app.main.video;
 
 import android.os.Bundle;
 
