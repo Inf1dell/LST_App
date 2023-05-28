@@ -127,12 +127,14 @@
                 android:layout_marginRight="6dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_vk"
+                android:backgroundTint="@color/app"
                 android:minHeight="0dp"
                 android:paddingStart="20dp"
                 android:paddingTop="8dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="8dp"
-                android:text="Музыка" />
+                android:text="Музыка"
+                android:textColor="@color/white" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button9"
@@ -161,7 +163,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="8dp"
-                android:text="Музыка" />
+                android:text="Рисование" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button7"
@@ -175,7 +177,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="8dp"
-                android:text="Button" />
+                android:text="Хореография" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button8"
@@ -189,7 +191,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="8dp"
-                android:text="Button" />
+                android:text="Цирковое" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -271,6 +273,7 @@
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/test1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginRight="12dp">
@@ -351,6 +354,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/test2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginRight="12dp">
@@ -431,6 +435,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/test3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="12dp">
